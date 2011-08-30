@@ -11,14 +11,14 @@
 
 ## Usage
 
-     import tornado.stream
-     ..
-     class ExampleStreamHandler(tornado.stream.StreamHandler):
-	 def open(self):
-	     print "open"
-	     self.write_message("Hello, Python!")
-         def on_close(self):
-	     print "close"
+	import tornado.stream
+	..
+	class ExampleStreamHandler(tornado.stream.StreamHandler):
+		def open(self):
+			print "open"
+			self.write_message("Hello, Python!")
+		def on_close(self):
+			print "close"
 
   Using the Same "tornado.websocket".
 
