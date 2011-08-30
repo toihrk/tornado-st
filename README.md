@@ -14,7 +14,7 @@
      import tornado.stream
      ..
      class ExampleStreamHandler(tornado.stream.StreamHandler):
-              def open(self):
+	 def open(self):
 	     print "open"
 	     self.write_message("Hello, Python!")
          def on_close(self):
